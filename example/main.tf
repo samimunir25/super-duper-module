@@ -13,7 +13,7 @@ module "webserver_cluster" {
 
   name = "default-${local.name}"
 
-  vpc_zone_identifier = ["subnet-2dde2f23", "subnet-5dcff573"]
+  vpc_zone_identifier = ["subnet-0408ef15c028fee36", "subnet-0821fd0ea753a5cd8"]
   min_size            = 0
   max_size            = 2
   desired_capacity    = 2
