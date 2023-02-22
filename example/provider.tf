@@ -1,9 +1,10 @@
-provider "aws" {
-  region = local.region
+terraform {
+  required_version = ">= 0.13.1"
 
-  default_tags {
-    tags = {
-      Project = "terraform-aws-autoscaling"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 4.22"
     }
   }
 }
