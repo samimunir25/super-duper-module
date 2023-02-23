@@ -1,9 +1,13 @@
+########################################
+# Autoscaling group with Launch Template
+########################################
+
 variable "name" {
   type = string
 }
 
 variable "vpc_zone_identifier" {
-  
+
 }
 
 variable "min_size" {
@@ -27,6 +31,30 @@ variable "instance_type" {
 }
 
 variable "tags" {
-  
+
 }
 
+variable "user_data" {
+  
+}
+/**
+###########################
+# Security Group
+###########################
+
+variable "description" {
+  type = string
+}
+
+###########################
+# Application Load Balancer
+###########################
+
+variable "vpc_id" {
+  type = string
+}
+
+variable "subnets" {
+  
+}
+**/
